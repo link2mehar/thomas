@@ -96,7 +96,7 @@ const useStyles = makeStyles(theme => ({
     marginTop:'100px',
     [theme.breakpoints.up('md')]: {
       display:'none'
-    },
+    }
   }
 }));
 
