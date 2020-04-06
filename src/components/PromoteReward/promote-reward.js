@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 70,
     justifyContent: 'space-between',
     backgroundColor: '#B3BFEB',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       paddingBottom:0,
     }
   },
@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     '& span': {
       color: 'white'
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 100,
       color:'#fff',
       '& span': {
@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 530,
     textAlign: 'center',
     fontWeight: 'bold',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 30,
       lineHeight: '35px',
       color:'#fff !important'
@@ -61,7 +61,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     maxWidth: 480,
     paddingTop: 25,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth: 700,
       paddingTop: 35,
       }
@@ -79,7 +79,7 @@ const useStyles = makeStyles(theme => ({
   artwork: {
     paddingTop: 100,
     paddingLeft: 70,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       paddingLeft: 0,
       }
   },
@@ -87,7 +87,7 @@ const useStyles = makeStyles(theme => ({
     '& svg': {
       width: '450px !important'
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       '& svg': {
         width: '700px !important'
       }
@@ -95,7 +95,7 @@ const useStyles = makeStyles(theme => ({
 },
   artworkImage: {
     maxWidth: 400,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth:'700px',
       }
   },
@@ -106,7 +106,7 @@ const useStyles = makeStyles(theme => ({
   secondary: {
     background: 'white',
     color: 'black',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       background: '#b3bfeb',
     }
   }
@@ -123,8 +123,7 @@ const PromoteReward = ({ parimary }) => {
       <Grid container>
         <Grid
           item
-          lg={6}
-          sm={12}
+          md={6}
           xs={12}
           className={`${classes.container} ${
             parimary ? classes.primary : classes.secondary
@@ -159,8 +158,7 @@ const PromoteReward = ({ parimary }) => {
         </Grid>
         <Grid
           item
-          lg={6}
-          sm={12}
+          md={6}
           xs={12}
           className={`${classes.container} ${
             parimary ? classes.primary : classes.secondary

@@ -102,7 +102,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: 36,
     lineHeight: '42px',
     marginRight: 70,
-    [theme.breakpoints.down('lg')]: {
+    [theme.breakpoints.down('sm')]: {
       marginRight: 0,
       textAlign:'left',
     },

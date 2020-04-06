@@ -20,14 +20,14 @@ const useStyles = makeStyles(theme => ({
     '& * + *': {
       marginLeft: theme.spacing(4)
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       opacity: '0',
       marginRight: '100px',
       transition: '.5s ease-in-out'
     }
   },
   mmenu:{
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       opacity: '0',
       transition: '.5s ease-in-out'
     }
@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
     padding: '40px 70px',
     backgroundColor: '#B3BFEB',
     boxSizing:'border-box',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       top: 0,
       width: '100%',
       overflow: 'hidden',
@@ -57,7 +57,7 @@ const useStyles = makeStyles(theme => ({
       textDecoration: 'none',
       color: 'white'
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 80,
     }
   }

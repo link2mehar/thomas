@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 70,
     justifyContent: 'space-between',
     backgroundColor: '#B3BFEB',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       paddingBottom: 150,
       }
   },
@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
     '& span': {
       color: 'white'
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 100,
       }
   },
@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 530,
     textAlign: 'center',
     fontWeight: 'bold',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 30,
       lineHeight: '35px',
       }
@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     maxWidth: 530,
     paddingTop: 25,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth: 700,
       paddingTop: 35,
       }
@@ -81,7 +81,7 @@ const useStyles = makeStyles(theme => ({
     '& svg': {
       width: '362px !important'
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       paddingTop:'100px',
       paddingLeft: 0,
       '& svg': {
@@ -91,7 +91,7 @@ const useStyles = makeStyles(theme => ({
   },
   topSame:{
     paddingTop:'92px',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       paddingTop:'100px'
       },
     
@@ -100,7 +100,7 @@ const useStyles = makeStyles(theme => ({
   artworkImage: {
     maxWidth: 611,
     paddingLeft: 70,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth: '700px',
       transform: 'scale(1.2)',
       paddingTop: '40px',
@@ -135,9 +135,9 @@ const ShareDiscover = ({ primary }) => {
         <Grid container>
           <Grid
             item
-            lg={6}
-            sm={12}
             xs={12}
+            md={6}
+            
             className={`${classes.container} ${
               primary ? classes.primary : classes.secondary
             }`}
@@ -171,9 +171,9 @@ const ShareDiscover = ({ primary }) => {
           </Grid>
           <Grid
             item
-            lg={6}
-            sm={12}
             xs={12}
+            md={6}
+            
             className={`${classes.container} ${
               primary ? classes.primary : classes.secondary
             }`}

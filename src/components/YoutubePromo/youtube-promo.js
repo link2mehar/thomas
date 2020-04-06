@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     backgroundColor: '#B3BFEB',
     boxSizing:'border-box',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       margin: '0 !important',
       width: '100%',
     },
@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
     '& span': {
       color: 'white'
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       '& span': {
         color: '#fff !important'
       },
@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   snipVideo : {
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       textAlign:'center'
     }
   },
@@ -92,7 +92,7 @@ const useStyles = makeStyles(theme => ({
   },
   frameWi:{
     width:'893px',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
     width:'750px',
     }
 
@@ -101,7 +101,7 @@ const useStyles = makeStyles(theme => ({
   secondary: {
     background: 'white',
     color: 'black',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       background: '#b3bfeb',
     }
   }

@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 70,
     justifyContent: 'center',
     backgroundColor: '#B3BFEB',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       paddingTop:200
     }
   },
@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
     '& span': {
       color: 'white'
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 100,
       color:'#fff',
       '& span': {
@@ -59,7 +59,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 457,
     textAlign: 'center',
     fontWeight: 'bold',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 30,
       lineHeight: '35px',
       }
@@ -68,7 +68,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     maxWidth: 457,
     paddingTop: 25,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth: 700,
       paddingTop: 35,
       }
@@ -88,7 +88,7 @@ const useStyles = makeStyles(theme => ({
     '& svg': {
       width: '648px !important'
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       '& svg': {
         width: '900px !important'
       },

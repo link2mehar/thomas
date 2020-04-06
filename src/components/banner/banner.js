@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     '& > * + *': {
       marginLeft: theme.spacing(6)
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: '30px',
     }
   },
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#B3BFEB',
     width:'100%',
     boxSizing:'border-box',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       marginTop:'150px'
     }
 
@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   textContainer: {
     padding: 40,
     maxWidth:500,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth:'unset'
     }
     
@@ -53,11 +53,7 @@ const useStyles = makeStyles(theme => ({
     '& span': {
       color: 'white'
     },
-    [theme.breakpoints.down('md')]: {
-      fontSize: '110px',
-      lineHeight: '120px',
-      textAlign:'center'
-    }
+    
   },
   subtitle: {
     fontSize: 24,
@@ -65,7 +61,7 @@ const useStyles = makeStyles(theme => ({
     display: 'block',
     fontWeight: 'bold',
     marginTop: 18,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display:'none'
     }
   },
@@ -75,9 +71,9 @@ const useStyles = makeStyles(theme => ({
     fontSize: 25
   },
   rightImage: {
-    width: '680px !important',
+    maxWidth: '680px !important',
     paddingLeft: 80,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       marginTop:'50px',
       width: '700px !important',
     paddingLeft: 20,
@@ -91,14 +87,14 @@ const useStyles = makeStyles(theme => ({
     '& img': {
       maxWidth: 132
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display:'none'
     }
   },
   mobileimg:{
     textAlign:'center',
     marginTop:'100px',
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       display:'none'
     }
   }
@@ -117,7 +113,7 @@ const Banner = ({
       <Box className={classes.outerContainer}>
         <Container maxWidth='xl'>
           <Grid container className={classes.container}>
-            <Grid item lg={5} sm={12} xs={12}>
+            <Grid item md={5} xs={12}>
               <Box className={classes.textContainer}>
                 <Typography className={classes.heading} component='h2'>
                   <span>For</span> creators
@@ -154,7 +150,7 @@ const Banner = ({
                 </Grid>
               </Box>
             </Grid>
-            <Grid item lg={7} sm={12} xs={12}>
+            <Grid item md={7} xs={12}>
               <img alt='' className={classes.rightImage} src={rightImage} />
               <div>
               <Grid className={classes.mobileimg}>
