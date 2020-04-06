@@ -113,7 +113,7 @@ const Banner = ({
       <Box className={classes.outerContainer}>
         <Container maxWidth='xl'>
           <Grid container className={classes.container}>
-            <Grid item md={5} xs={12}>
+            <Grid item md={5} xs={12} sm={12}>
               <Box className={classes.textContainer}>
                 <Typography className={classes.heading} component='h2'>
                   <span>For</span> creators
@@ -150,7 +150,7 @@ const Banner = ({
                 </Grid>
               </Box>
             </Grid>
-            <Grid item md={7} xs={12}>
+            <Grid item md={7} xs={12} sm={12}>
               <img alt='' className={classes.rightImage} src={rightImage} />
               <div>
               <Grid className={classes.mobileimg}>
